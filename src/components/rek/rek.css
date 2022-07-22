@@ -1,0 +1,35 @@
+.rek{
+    width: 100%;
+    background: rgb(224, 224, 224);
+}
+.rek_main{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rek_main_right{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.rek_main_left_p{
+    font-size: 17px;
+}
+@media screen and (max-width: 800px) {
+    .rek_main{
+        height: auto;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .rek_main_right{
+        width: 100%;
+    }
+}

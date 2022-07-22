@@ -1,0 +1,42 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+.product1_main_carusel{
+    background: rgb(248, 248, 248);
+    width: 100%;
+}
+.product1_main_carusel_div{
+    transform: scale(.9);
+    margin-left: -4px;
+    box-shadow: 0 6px 12px #5555;
+    border-radius: 3px;
+    transition: .5s;
+}
+.product1_main_carusel_div:hover{
+    box-shadow: 0 0 3px 6px blue;
+    transform: scale(.95);
+}
+.product1_main_carusel_div:hover .product1_main_carusel_div_btn{
+    display: flex;
+}
+.product1_main_carusel_div_img{
+    width: 100%;
+}
+.product1_main_carusel_div_img img{
+    width: 100%;
+}
+.next_me{
+    color: red;
+    font-size: 50px;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product1_main_carusel_div_btn{
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+}

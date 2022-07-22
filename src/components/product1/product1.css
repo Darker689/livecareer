@@ -1,0 +1,23 @@
+
+.product1{
+    width: 100%;
+    background: rgb(248, 248, 248);
+    padding-top: 1px;
+}
+.product1_main{
+    width: 100%;
+}
+.product1_main_text_p{
+    margin-top: 70px;
+}
+.product1_main_text_p1{
+    text-align: center;
+    font-size: 21px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.product1_main_text_p2{
+    text-align: center;
+}
+

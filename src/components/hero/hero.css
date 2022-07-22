@@ -1,0 +1,63 @@
+.home_hero{
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-image: url(https://www.livecareer.com/wp-content/themes/livecareer/images/home/Homepage-Banner-Image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.home_hero_main{
+    width: 100%;
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home_hero_main_left_p{
+    font-size: 50px;
+    color: #fff;
+}
+.home_hero_main_left_p1{
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+}
+.home_hero_main_left_btn{
+    width: max-content;   
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.home_hero_main_right_img{
+    display: flex;
+    max-width: 470px;
+}
+.home_hero_main_right_img img{
+    width: 100%;
+}
+.br{
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .home_hero{
+        height: auto;
+    }
+    .home_hero_main{
+        height: auto;
+        flex-direction: column;
+        row-gap: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .home_hero_main_left{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .br{
+        display: none;
+    }
+    .home_hero_main_left_btn{
+        width: 100%;
+    }
+}
