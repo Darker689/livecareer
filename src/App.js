@@ -10,15 +10,13 @@ import Home from './pages/Home';
 class App extends Component {
   render() {
     return (
-      <div>
       <BrowserRouter>
-      <Navbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-        </Routes>
-      <Footer/>
+        <Navbar/>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+          </Routes>
+        <Footer/>
       </BrowserRouter>
-      </div>
     );
   }
 }

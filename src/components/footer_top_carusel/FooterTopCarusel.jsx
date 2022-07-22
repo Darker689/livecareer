@@ -20,7 +20,7 @@ const data1 = [
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
-            <BsFillBookmarkStarFill/>,
+            <BsFillBookmarkStarFill/>
         ],
         name: 'Amazing Cover page...',
         name1: 'I definetily believe my cover page created...',
@@ -34,7 +34,7 @@ const data1 = [
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
-            <BsFillBookmarkStarFill/>,
+            <BsFillBookmarkStarFill/>
         ],
         name: 'Amazing Cover page...',
         name1: 'I definetily believe my cover page created...',
@@ -48,7 +48,7 @@ const data1 = [
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
-            <BsFillBookmarkStarFill/>,
+            <BsFillBookmarkStarFill/>
         ],
         name: 'Amazing Cover page...',
         name1: 'I definetily believe my cover page created...',
@@ -62,7 +62,7 @@ const data1 = [
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
-            <BsFillBookmarkStarFill/>,
+            <BsFillBookmarkStarFill/>
         ],
         name: 'Amazing Cover page...',
         name1: 'I definetily believe my cover page created...',
@@ -76,7 +76,7 @@ const data1 = [
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
-            <BsFillBookmarkStarFill/>,
+            <BsFillBookmarkStarFill/>
         ],
         name: 'Amazing Cover page...',
         name1: 'I definetily believe my cover page created...',
@@ -90,7 +90,7 @@ const data1 = [
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
             <BsFillBookmarkStarFill/>,
-            <BsFillBookmarkStarFill/>,
+            <BsFillBookmarkStarFill/>
         ],
         name: 'Amazing Cover page...',
         name1: 'I definetily believe my cover page created...',
@@ -144,7 +144,13 @@ const FooterTopCarusel = () => {
                                     <div className='product1_main_carusel_div1' key={item.id}>
                                         <div className='product1_main_carusel_div1_div'>
                                             <div className='product1_main_carusel_div1_left'>
-                                                <p className='product1_main_carusel_div1_left_p'>{item.icon}</p>  
+                                                <p className='product1_main_carusel_div1_left_p'>
+                                                    {
+                                                        item.icon.map((star, index)=>(
+                                                            <span key={index}>{star}</span>
+                                                        ))
+                                                    }
+                                                    </p>  
                                                 <p className='product1_main_carusel_div1_left_p1'>{item.name}</p>
                                                 <p className='product1_main_carusel_div1_left_p2'>{item.name1}</p>
                                                 <p className='product1_main_carusel_div1_left_p3'>{item.name2}</p>
